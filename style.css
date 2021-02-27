@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+nav {
+    background-color: #ff006e;
+}
+
+.nav-header {
+    font-size: 25px;
+    color: #80ffdb;
+    padding: 20px;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-cash-register {
+    font-size: 25px;
+    color: #22577a;
+}
+
+/* section */
+.products {
+    padding-top: 40px;
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #ff006e;
+    box-shadow: 2px 3px 1px 1px #f08080;
+    border-radius: 10px;
+    min-width: 260px;
+}
+
+.product:hover {
+    animation: scale 1s linear;
+}
+
+@keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
