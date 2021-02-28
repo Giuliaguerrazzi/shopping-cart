@@ -46,18 +46,32 @@ nav {
     border: 1px solid #ff006e;
     box-shadow: 2px 3px 1px 1px #f08080;
     border-radius: 10px;
-    min-width: 260px;
+    width: 260px;
+    transition-duration: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 .product:hover {
-    animation: scale 1s linear;
+   transform: scale(1.1);
 }
 
-@keyframes scale {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.2);
-    }
-  }
+img {
+    width: 150px;
+    padding: 20px;
+}
+
+.description {
+    font-size: 15px;
+}
+
+.cart button {
+    background: #ff006e;
+    color: #80ffdb;
+    font-size: 15px;
+    width: 35px;
+    border-radius: 20px;
+}
